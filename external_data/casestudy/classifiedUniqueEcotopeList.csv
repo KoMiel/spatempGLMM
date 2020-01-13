@@ -1,0 +1,162 @@
+,x,
+1,Dynamisch zoet tot zwak brak ondiep water,0
+2,Zeer diep,0
+3,Matig diep,0
+4,Diep,0
+5,Moerassig structuurrijk overstromingsgrasland,1
+6,Matig tot sterk dynamisch hard substraat onder invloed van zoet water,0
+7,Tijdelijk kaal oevers,0
+8,Moerasruigte/gorsruigte,1
+9,Moerasplanten en helofytenzone,0
+10,Overstromingsvrij bebouwd,0
+11,Ondiep,0
+12,Zoetwater biezengors,0
+13,Overstromingsvrij productiebos,0
+14,Overstromingsvrij productiegrasland,1
+15,Akker in oever,0
+16,Zoete zandplaten,0
+17,Grauwe wilgstruweel,0
+18,Productiegrasland,1
+19,Productiebos in oever,0
+20,Overstromingsvrij tijdelijk kaal,0
+21,Overstromingsvrij riet en helofytencultuur,0
+22,Overstromingsvrije ruigte,1
+23,Waterdiepte onbekend,0
+24,Overstromingsvrije akker,0
+25,Overstromingsvrij of matig tot sterk dynamisch hard substraat onder invloed van zoet water,0
+26,Oever of overstromingsvrij natuurlijk zachthoutstruweel en -bos,0
+27,Oever of overstromingsvrij natuurlijk grasland,1
+28,Oever of overstromingsvrij productiebos,0
+29,Overstromingsvrij struweel,0
+30,Oever of overstromingsvrij productiegrasland,1
+31,Oever of overstromingsvrij struweel,0
+32,Moerasruigte/gorsruigte/overstromingsvrije ruigte,0
+33,Riet en overige helofyten,0
+34,Zachthoutooibos,0
+35,Overstromingsvrij natuurlijk grasland,1
+36,Oever of overstromingsvrije akker,0
+37,Overstromingsvrij natuurlijk bos,0
+38,Zandplaten,0
+39,Tijdelijk kaal,0
+40,Oeverwal of uiterwaard productiegrasland,1
+41,Matig tot sterk dynamisch hard substraat onder invloed van zoet of brak water,0
+42,Overstromingsvrij riet,0
+43,Vegetatie met lage bedekking (5 - 25%) in oever,0
+44,Oeverwal of uiterwaard onberoeid (natuurlijk),0
+45,Moerasruigte in oever,1
+46,Overstromingsvrij onbegroeid (antropogeen),0
+47,Helofytenmoeras (riet/moerasplanten) in oever,0
+48,Zachthout struweel in oever,0
+49,Oeverwal of uiterwaard struweel,0
+50,Uiterwaard natuurlijk grasland,1
+51,Ondiep zomerbed,0
+52,Oeverwal of uiterwaard ruigte,1
+53,Matig diep zomerbed,0
+54,Zeer diep rivierbegeleidend water (> 20 d/j overstroomd),0
+55,Uiterwaard riet,0
+56,Uiterwaard productiegrasland,1
+57,Uiterwaard bebouwd,0
+58,Matig diep rivierbegeleidend water (> 20 d/j overstroomd),0
+59,Productiegrasland in oever,1
+60,Matig diep rivierbegeleidend water (< 20 d/j overstroomd),0
+61,Ondiep rivierbegeleidend water (> 20 d/j overstroomd),0
+62,Zachthout ooibos in oever,0
+63,Uiterwaard ruigte,1
+64,Oeverwal of uiterwaard bebouwd,0
+65,Oeverwal of uiterwaard natuurlijk grasland,1
+66,Moerassig overstromingsgrasland in oever,1
+67,Uiterwaard natuurlijk bos,0
+68,Uiterwaard vegetatie met lage bedekking (5 - 25%),0
+69,Uiterwaard struweel,0
+70,Oeverwal of uiterwaard natuurlijk bos,0
+71,Ondiep rivierbegeleidend water (< 20 d/j overstroomd),0
+72,Uiterwaard akker,0
+73,Uiterwaard productiebos,0
+74,Overstromingsvrije vegetatie met lage bedekking (5 - 25%),0
+75,Zeer diep rivierbegeleidend water (< 20 d/j overstroomd),0
+76,Oeverwal of uiterwaard vegetatie met lage bedekking (5 - 25%),0
+77,Diepe eenzijdig aangetakte nevengeul,0
+78,Ondiepe eenzijdig aangetakte nevengeul,0
+79,Overstromingsvrije laagstamboomgaard,0
+80,Oeverwal of uiterwaard akker,0
+81,Overstromingsvrije hoogstamboomgaard,0
+82,Uiterwaard onbegroeid (antropogeen),0
+83,Oeverwal of uiterwaard onbegroeid (antropogeen),0
+84,Oeverwal of uiterwaard productiebos,0
+85,"Matig diep, zoet getijdenwater",0
+86,Zoet getijdenwater,0
+87,Soortenarme helofytenvegetatie in ondiep water,0
+88,Soortenarm helofytenmoeras van het supralittoraal,0
+89,Matig diepe eenzijdig aangetakte nevengeul,0
+90,Overstromingsarm vloedbos,0
+91,Diep zomerbed,0
+92,Onbegroeid (antropogeen) in oever,0
+93,Uiterwaard laagstamboomgaard,0
+94,Oeverwal of uiterwaard hoogstamboomgaard,0
+95,Uiterwaard hoogstamboomgaard,0
+96,Hoogstamboomgaard in oever,0
+97,Diepe nevengeul,0
+98,Ondiepe nevengeul,0
+99,Matig diepe nevengeul,0
+100,"Ondiep, zoet getijdenwater",0
+101,Vloedbos in oever,0
+102,Moerasruigte/gorsruigte in oever,1
+103,Zoet water achter vooroever,0
+104,"Diep, zoet getijdenwater",0
+105,Haven,0
+106,Zoete zandplaten/zoete slibrijke platen,0
+107,Eenzijdig ondiep aangetakte zoete getijdenkreek,0
+108,Eenzijdig diep aangetakte zoete getijdenkreek,0
+109,Griend in oever,0
+110,Eenzijdig matig diep aangetakte zoete getijdenkreek,0
+111,Eenzijdig aangetakte zoete getijdenkreek,0
+112,NA,0
+113,Rivierbegeleidend water (> 20 d/j overstroomd),0
+114,Rivierbegeleidend water (< 20 d/j overstroomd),0
+115,Zoet aangetakte plas,0
+116,Onbekend,0
+117,"Zeer diep, zoet getijdenwater",0
+118,Matig dynamisch zoet tot zwak brak ondiep water/zoetwater biezengors,0
+119,Overstromingsvrije biezen,0
+120,Zwak brak getijdenwater,0
+121,Zandplaten overstromingsvrij,0
+122,"Ondiep, zwak brak getijdenwater",0
+123,"Diep, zwak brak getijdenwater",0
+124,"Matig diep, zwak brak getijdenwater",0
+125,"Zeer diep, zwak brak getijdenwater",0
+126,Overstromingsvrij natuurlijk/productiegrasland,0
+127,Matig dynamisch brak tot zout ondiep water/brak biezengors,0
+128,Matig dynamisch hard substraat op de buitenberm onder invloed van getijdenwater,0
+129,Brak getijdenwater,0
+130,"Ondiep, brak getijdenwater",0
+131,"Matig diep, brak getijdenwater",0
+132,"Diep, brak getijdenwater",0
+133,"Zeer diep, brak getijdenwater",0
+134,Sterk dynamische brakke en zoute zandige platen/matig dynamische brakke en zoute lage platen,0
+135,Oever of overstromingsvrij natuurlijk bos,0
+136,Rivierbegeleidend water (</> 20 d/j overstroomd),0
+137,Vegetatie met lage bedekking (5 - 25%) in oever of overstromingsvrij,0
+138,Hard substraat in laag littoraal zout getijdenwater,0
+139,Brak aangetakte plas,0
+140,Overstromingsvrij grasland (natuurlijk of productie),1
+141,Brak water achter vooroever,0
+142,Oeverwal of uiterwaard laagstamboomgaard,0
+143,Grindbanken,0
+144,Grasland,1
+145,Uiterwaard grasland (natuurlijk of productie),1
+146,Oeverwal of uiterwaard grasland (natuurlijk of productie),1
+147,Moerassig overstromingsgrasland/productiegrasland in oever,1
+148,Gering dynamisch zoet tot zwak brak ondiep water,0
+149,Grasland in oever,1
+150,Overstromingsvrij grasland,1
+151,Moerasruigte,1
+152,Matig dynamisch zoet tot zwak brak ondiep water,0
+153,Diep water,0
+154,Matig diep water,0
+155,Ondiep water,0
+156,Zeer diep water,0
+157,Matig tot sterk dynamisch hard substraat onder invloed van zoet of,0
+158,Sterk dynamische brakke en zoute zandige platen/matig dynamische b,0
+159,Matig dynamisch hard substraat op de buitenberm onder invloed van,0
+160,Overstromingsvrij hardhoutooibos,0
+161,Eenzijdig zeer diep aangetakte zoete getijdenkreek,0

@@ -1,0 +1,22 @@
+{
+    "scenarios": [
+        {
+            "interactionW": 1,
+            "birdsNumMin": 30,
+            "birdsNumMax": 150,
+            "path": "positive/"
+        },
+        {
+            "interactionW": -1,
+            "birdsNumMin": 30,
+            "birdsNumMax": 150,
+            "path": "negative/"
+        },
+        {
+            "interactionW": 0,
+            "birdsNumMin": 30,
+            "birdsNumMax": 150,
+            "path": "neutral/"
+        }
+    ],
+}

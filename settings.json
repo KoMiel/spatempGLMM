@@ -1,0 +1,53 @@
+{
+    "grid": {
+        "num": 30,
+        "size": 50
+    },
+    "var": {
+        "var1": {
+            "label": "var1",
+            "smooth1": 1,
+            "smooth2": 10,
+            "weight": 3
+            },
+        "var2": {
+            "label": "var2",
+            "smooth1": 1,
+            "smooth2": 10,
+            "weight": 2
+            },
+        "var3": {
+            "label": "var3",
+            "smooth1": 0,
+            "smooth2": 0,
+            "weight": 1
+            }
+    },
+    "unsuitable": {
+        "smooth1": 1,
+        "smooth2": 10,
+        "threshold": 0.3
+    },
+    "years": 10,
+    "randomSeed": 0,
+    "directory": {
+        "landscapes": "../data/landscapes/",
+        "settlements": "../data/settlements/",
+        "datasets": "../data/datasets/",
+        "models": "../data/models/",
+        "plots": "../data/plots/",
+        "results": "../data/results/",
+        "casestudy": "../data/casestudy/",
+        "casestudy_external": "../external_data/casestudy/"
+    },
+    "absNum": 1000,
+    "distanceClasses": 10,
+    "nRuns": 90,
+    "homerangeDiameter": 250,
+    "autocovariate": [
+        {
+            "parameter": 1,
+            "label": "exp"
+        }
+    ]
+}
