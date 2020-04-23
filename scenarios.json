@@ -4,21 +4,21 @@
             "interactionW": -2.5,
             "nIndividualsMin": 30,
             "nIndividualsMax": 150,
-            "path": "negative_test/",
+            "path": "negative/",
             "nSelections": 10
         },
         {
             "interactionW": 1.25,
             "nIndividualsMin": 30,
             "nIndividualsMax": 150,
-            "path": "positive_test/",
+            "path": "positive/",
             "nSelections": 10
         },
         {
             "interactionW": 0,
             "nIndividualsMin": 30,
             "nIndividualsMax": 150,
-            "path": "neutral_test/",
+            "path": "neutral/",
             "nSelections": 0
         }
     ]
