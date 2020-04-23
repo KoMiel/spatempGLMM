@@ -1,11 +1,8 @@
 
+# this file generates a list of all ecotopes which we then classified as suitable and unsuitable
 
-### this file generates a list of all ecotopes which are then classified in suitable and unsuitable
+# import packages
 
-
-### import packages ###
-
-# open libaries
 library(sf)
 library(rjson)
 
@@ -14,7 +11,6 @@ f <- "../../settings.json"
 settings <- fromJSON(file = f)
 
 # get the directories
-
 directoryCasestudyExternal <- settings$directory$casestudy_external
 directoryCasestudy <- settings$directory$casestudy
 
@@ -27,7 +23,11 @@ ecotopeList <- unique(ecotopes$ECOTOOP)
 # get a list of all ecotopes
 uniqueEcotopeList <- unique(ecotopeList)
 
-# save it
+# generate directories if necessary
+dir.create(path = paste(c("../data"), collapse = ""), showWarnings = FALSE)
+dir.create(path = paste(c(directoryCasestudy), collapse = ""), showWarnings = FALSE)
 dir.create(path = paste(c(directoryCasestudy, "ecotopes/"), collapse = ""), showWarnings = FALSE)
+
+# save the list
 filename <- paste(c(directoryCasestudy, "ecotopes/uniqueEcotopeList.csv"), collapse = "")
 write.csv(uniqueEcotopeList, filename)

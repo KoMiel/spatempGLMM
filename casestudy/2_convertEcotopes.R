@@ -1,9 +1,7 @@
 
+# this file converts ecotope map to suitable and unsuitable
 
-### this file converts ecotope map to suitable and unsuitable
-
-
-### import packages ###
+# import packages
 
 library(sf)
 library(plyr)
@@ -16,9 +14,6 @@ settings <- fromJSON(file = f)
 # get the directories
 directoryCasestudyExternal <- settings$directory$casestudy_external
 directoryCasestudy <- settings$directory$casestudy
-
-
-### main program ###
 
 # read the ecotopes
 dsn <- paste(c(directoryCasestudyExternal, "ecotopenKarteringCycli/ecotopen_herziene_tweede_cyclus/geogegevens/"), collapse = "")
@@ -36,9 +31,6 @@ ecotopeList <- unique(ecotopes$ECOTOOP)
 
 # loop over all ecotopes and replace them with 1 and 0 (suitable and unsuitable)
 for (ecotope in ecotopeList) {
-  if (is.na(ecotope)){
-    next
-  }
   ecotopes$ECOTOOP <- mapvalues(ecotopes$ECOTOOP, from = ecotope, to = classifiedUniqueEcotopeList[which(classifiedUniqueEcotopeList$x == ecotope, arr.ind = TRUE),3])
 }
 
