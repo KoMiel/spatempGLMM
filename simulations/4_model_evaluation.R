@@ -25,7 +25,7 @@ scenarioList <- unique(modelList[,1])
 lscapeList <- unique(modelList[,2])
 
 # considered options for p_c
-p_c <- c(0.64,0.8,1,1.25,1.5625)
+p_cs <- c(0.64,0.8,1,1.25,1.5625)
 
 # loop over scenarios
 
@@ -39,7 +39,7 @@ for (scenario in scenarioList){
   dir.create(path = paste(c(directoryResults, subpath), collapse = ""), showWarnings = FALSE)
   
   # empty data frame for AUCs
-  AUCs <- data.frame(matrix(nrow = length(lscapeList), ncol = 6))
+  AUCs <- data.frame(matrix(nrow = length(lscapeList), ncol = 6, 0))
   names(AUCs) <- c("base", "auto", "rand", "comb", "comp", "yearly")
   
   # empty data frame for model slopes
@@ -144,10 +144,6 @@ for (scenario in scenarioList){
       AUCs[lscape + 1, "base"] <- AUCs[lscape + 1, "base"] + auc(V1 ~ predBase, data = testResultsYear) * sum(testResultsYear$V1)/sum(testResults$V1)
       AUCs[lscape + 1, "rand"] <- AUCs[lscape + 1, "rand"] + auc(V1 ~ predRand, data = testResultsYear) * sum(testResultsYear$V1)/sum(testResults$V1)
     }
-
-    # store the AUCs
-    AUCs[lscape + 1, "base"] <- AUC_temp[, "base"]
-    AUCs[lscape + 1, "rand"] <- AUC_temp[, "rand"] 
     
     # get the set of estimated slopes of the models and store them in data frame
     pars <- resultsNoautocov[[3]]

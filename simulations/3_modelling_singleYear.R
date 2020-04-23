@@ -76,6 +76,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
     formulaComb <- y ~ 0 + b0 + V6 + V7 + autocovariate + f(s, model = spde)
 
     # fit the model
+    # note: for one of the simulations, the model did not converge. Therefore, we used the simpler gaussian approximation in that one case
     comb <- inla(formulaComb,
                  family = "binomial",
                  control.family = list(link = "logit"),
@@ -84,8 +85,8 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
-                 verbose = FALSE
+#                 control.inla = list(strategy = 'gaussian'),
+                 verbose = TRUE
     )
 
     
@@ -150,7 +151,7 @@ folds <- list(c(0,1,2,3,4,5,6,7,8),
               c(1,2,3,4,5,6,7,8,9))
 
 # random seeds
-seeds <- rnorm(n = nrow(modelList))
+seeds <- runif(n = nrow(modelList)) * 1000000
 
 # loop over all scenarios
 for (row in 1:nrow(modelList)) {

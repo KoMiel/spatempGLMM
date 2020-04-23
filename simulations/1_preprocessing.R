@@ -75,6 +75,8 @@ autocovFunc <- function(distances, p, Y, year){
     # get the data that belongs to the sampling event
     distYear <- distances[[counter]] # distances matrix
     Y_Year <- Y[year == k] # the presence/absence encoding
+    
+    # empty matrix for autocovariate
     autocovYear <- matrix(nrow = nrow(distYear), ncol = 1, 0)
     
     # loop over all presences
@@ -122,7 +124,7 @@ directoryDatasets <- settings$directory$datasets
 directoryModels <- settings$directory$models
 
 # generate a random seed and use it
-seed <- rnorm(n = 1)
+seed <- runif(n = 1) * 1000000
 set.seed(seed)
 
 # save the random seed 

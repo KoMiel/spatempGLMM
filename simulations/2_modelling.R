@@ -40,7 +40,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
     # get fold
     fold <- folds[nFold][[1]]
 
-    # split the corncrake data in testing and training dataset
+    # split the data in testing and training dataset
     testIndexes <- which(dataFrame$V4 %in% fold,arr.ind=TRUE)
     testFrame <- dataFrame[testIndexes, ]
     trainFrame <- dataFrame[-testIndexes, ]
@@ -87,7 +87,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
+#                 control.inla = list(strategy = 'gaussian'),
                  verbose = FALSE
     )
     
@@ -99,7 +99,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
+#                 control.inla = list(strategy = 'gaussian'),
                  verbose = FALSE
     )
 
@@ -238,7 +238,7 @@ CV2 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
+#                 control.inla = list(strategy = 'gaussian'),
                  verbose = FALSE
     )
     
@@ -250,7 +250,7 @@ CV2 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
+#                 control.inla = list(strategy = 'gaussian'),
                  verbose = FALSE
     )
     
@@ -312,7 +312,7 @@ p_c <- c(0.64,0.8,1,1.25,1.5625)
 folds <- list(c(0,1), c(2,3), c(4,5), c(6,7), c(8,9))
 
 # random seeds
-seeds <- rnorm(n = nrow(modelList))
+seeds <- runif(n = nrow(modelList)) * 1000000
 
 # loop over all scenarios
 for (row in 1:nrow(modelList)) {
@@ -332,11 +332,10 @@ for (row in 1:nrow(modelList)) {
   set.seed(seed)
   
   # save the random seed 
-  randomSeed <- c(seed, '\n')
-  filename <- paste(c(directoryModels, subpath, lscape, "/seed.txt"), collapse = "")
+  randomSeed <- c(seed, lscape, '\n')
+  filename <- paste(c(directoryModels, subpath, "/seed.txt"), collapse = "")
   dir.create(path = directoryModels, showWarnings = FALSE) # generate directories if not already existing
   dir.create(path = paste(c(directoryModels, subpath), collapse = ""), showWarnings = FALSE)
-  dir.create(path = paste(c(directoryModels, subpath, lscape, "/"), collapse = ""), showWarnings = FALSE)
   sink(file = filename, append = TRUE)
   cat(randomSeed)
   sink()
