@@ -123,6 +123,8 @@ modelList <- read.table("../modelList.csv", sep = ',')
 directoryDatasets <- settings$directory$datasets
 directoryModels <- settings$directory$models
 
+# IMPORTANT: due to a mistake in the code, we had to rerun part of the models again. We thus used new random seeds to sample the dataset. To make the distinction clear, we implemented the random seeds in a slightly different way
+
 # generate a random seed and use it
 seed <- runif(n = 1) * 1000000
 set.seed(seed)
@@ -134,6 +136,9 @@ dir.create(path = directoryModels, showWarnings = FALSE) # generate directories 
 sink(file = filename, append = TRUE)
 cat(randomSeed)
 sink()
+
+# alternative method to generate seeds (used for neutral interactions)
+#seeds <- runif(n = nrow(modelList)) * 1000000
 
 # considered options for p_c
 p_c <- c(0.64,0.8,1,1.25,1.5625)
@@ -155,7 +160,18 @@ foreach (line = 1:nrow(modelList)) %dopar% {
   # split in presences and absences
   presFrame <- dataFrame[dataFrame$V1 == 1,]
   absFrame <- dataFrame[dataFrame$V1 == 0,]
+
+  # alternative method for random seeds (used for neutral interactions)
+#  seed <- seeds[line]
+#  set.seed(seed)
   
+  # save the random seed 
+#  randomSeed <- c(seed, lscape, '\n')
+#  filename <- paste(c(directoryDatasets, subpath, "/seed.txt"), collapse = "")
+#  sink(file = filename, append = TRUE)
+#  cat(randomSeed)
+#  sink()
+
   # sample a number of absences per sampling event
   absFrame <- absFrame %>% group_by(V4) %>% sample_n(size = absNum)
   absFrame <- as.data.frame(absFrame)
