@@ -19,7 +19,7 @@
             "nIndividualsMin": 30,
             "nIndividualsMax": 150,
             "path": "neutral/",
-            "nSelections": 0
+            "nSelections": 10
         }
     ]
 }
