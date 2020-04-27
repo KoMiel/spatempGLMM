@@ -111,7 +111,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
                    compute = TRUE, link = 1,
                    A = inla.stack.A(stk.full)
                  ),
-                 control.inla = list(strategy = 'gaussian'),
+#                 control.inla = list(strategy = 'gaussian'),
                  verbose = FALSE
     )
     

@@ -58,7 +58,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
       tag = "est",
       data = list(y = trainFrame$V1),
       A = list(1, A),
-      effects = list(data.frame(b0 = 1, V5 = trainFrame$V5, V6 = trainFrame$V6, V7 = trainFrame$V7, autocovariate = trainFrame$Autocovariate, year = trainFrame$V4), s = indexs)
+      effects = list(data.frame(b0 = 1, V5 = trainFrame$V5, V6 = trainFrame$V6, V7 = trainFrame$V7, autocovariate = trainFrame$Autocovariate), s = indexs)
     )
       
     # for test data, tag is pred and y is FakeY (NA for all points)
@@ -66,7 +66,7 @@ CV1 <- function(dataFrame, folds, lscape, subpath, directoryModels){
       tag = "pred",
       data = list(y = testFrame$FakeY),
       A = list(1, ATest),
-      effects = list(data.frame(b0 = 1, V5 = testFrame$V5, V6 = testFrame$V6, V7 = testFrame$V7, autocovariate = testFrame$Autocovariate, year = testFrame$V4), s = indexs)
+      effects = list(data.frame(b0 = 1, V5 = testFrame$V5, V6 = testFrame$V6, V7 = testFrame$V7, autocovariate = testFrame$Autocovariate), s = indexs)
     )
       
     # stk.full has stk.e and stk.p
